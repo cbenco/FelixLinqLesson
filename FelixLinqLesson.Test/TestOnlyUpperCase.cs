@@ -9,11 +9,11 @@ namespace FelixLinqLesson.Test
         [TestMethod]
         public void TestGetOnlyUppercase()
         {
-            var input = "DDD example CQRS Event Sourcing";
+            var input = "AAA DDD example CQRS Event Sourcing";
 
             var result = LinqPracticeMethods.GetOnlyUppercase(input);
 
-            var expected = new[] { "DDD", "CQRS" };
+            var expected = new[] { "AAA", "DDD", "CQRS" };
             CollectionAssert.AreEqual(expected, result.ToList());
         }
     }
