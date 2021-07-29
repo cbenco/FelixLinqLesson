@@ -60,7 +60,7 @@ namespace FelixLinqLesson
 
         public static string WriteList(IEnumerable<object> inputs)
         {
-            //Write a LINQ query that converts the input into a numbered list of strings
+            //Write a LINQ query that converts the input into a numbered list in string format.
             //The entries should be in the format "1: Item 1" and each should be separated by a new line character
 
             throw new NotImplementedException();
