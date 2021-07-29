@@ -55,19 +55,7 @@ namespace FelixLinqLesson
             //Take only the fields which satisfy the filter.
             //If there are no fields found, the Fields property should contain an empty list.
 
-            var fieldsLookup = fields.ToLookup(x => x.TableId);
-
-            return tables.Select(x => new Table
-            {
-                Id = x.Id,
-                Name = x.Name,
-                Fields = fieldsLookup[x.Id].Where(filter).Select(y => new Field
-                {
-                    Id = y.Id,
-                    Name = y.Name,
-                    Type = y.Type
-                })
-            });
+            throw new NotImplementedException();
         }
 
         public static string WriteList(IEnumerable<object> inputs)
